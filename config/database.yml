@@ -1,0 +1,14 @@
+
+development: &development
+  host: localhost
+  adapter: postgresql
+  username: ys
+  password: ys
+  database: ys_slave_dev
+
+test:
+  <<: *development
+  database: ys_slave_test
+
+production:
+  <<: *development
